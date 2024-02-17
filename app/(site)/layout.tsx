@@ -1,13 +1,15 @@
-import NavBar from '@/Components/NavBar'
-import React from 'react';
+import Footer from "@/Components/Footer";
+import NavBar from "@/Components/NavBar";
+import React from "react";
 
-function layout({ children }:{ children: React.ReactNode }) {
+function layout({ children }: { children: React.ReactNode }) {
   return (
     <div>
-        <NavBar />
-        {children}
+      <NavBar />
+      {children}
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default layout
+export default layout;
