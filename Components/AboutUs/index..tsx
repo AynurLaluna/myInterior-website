@@ -3,6 +3,8 @@ import axios from "axios";
 import Button from "../Button";
 import { IProps } from "@/Interface";
 import Image from "next/image";
+import TitleH3Dark from "../TitleH3Dark";
+import Description from "../Description";
 
 const url = "http://localhost:3001/about_work";
 const AboutUs = async () => {
@@ -14,16 +16,15 @@ const AboutUs = async () => {
           return (
             <div className="flex ">
               <div className="">
-                <h3>{title}</h3>
-                <p>{text}</p>
+                <TitleH3Dark title={title} />
+                <Description text={text} />
                 <Button to="/" title="Our Concept" />
               </div>
               <div>
-                <Image
+                <img
+                  className="p-5 rounded-2xl"
                   src={imageUrl}
-                  alt="interior image"
-                  width={100}
-                  height={100}
+                  alt="interior "
                 />
               </div>
             </div>

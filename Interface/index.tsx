@@ -9,6 +9,14 @@ export interface IOurWork {
   text: string;
 }
 
+export interface IReview {
+  id: number;
+  fullName: string;
+  from: string;
+  text: string;
+  imageUrl: string;
+}
+
 export interface IBanner {
   header: string;
   title1: string;
@@ -37,4 +45,7 @@ export interface IService {
 }
 export interface ITitleH3 {
   title: string;
+}
+export interface IDescription {
+  text: string;
 }
