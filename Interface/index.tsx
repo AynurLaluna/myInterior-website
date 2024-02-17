@@ -17,6 +17,13 @@ export interface IReview {
   imageUrl: string;
 }
 
+export interface IProjects {
+  id: number;
+  imageUrl: string;
+  title: string;
+  description: string;
+}
+
 export interface IBanner {
   header: string;
   title1: string;

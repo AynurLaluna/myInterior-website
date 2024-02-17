@@ -3,7 +3,7 @@ import Button2 from "../Button2";
 
 const Join = () => {
   return (
-    <div className="container m-auto ">
+    <div className="container mx-auto my-20">
       <div className="w-full h-[200px] flex flex-col justify-center items-center bg-primary2 rounded-2xl">
         <h3 className="text-[#fff] font-bold font-[display] text-3xl leading-[60px]">
           Wanna join the Interno?
