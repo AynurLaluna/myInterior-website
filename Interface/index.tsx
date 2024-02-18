@@ -17,6 +17,11 @@ export interface IReview {
   imageUrl: string;
 }
 
+export interface IBrands {
+  id: number;
+  iconUrl: string;
+}
+
 export interface IProjects {
   id: number;
   imageUrl: string;
@@ -55,4 +60,11 @@ export interface ITitleH3 {
 }
 export interface IDescription {
   text: string;
+}
+
+export interface ITeam {
+  id: number;
+  imageUrl: string;
+  fullName: string;
+  info: string;
 }
