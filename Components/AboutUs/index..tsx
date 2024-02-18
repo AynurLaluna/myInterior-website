@@ -14,7 +14,7 @@ const AboutUs = async () => {
       <div className="grid grid-rows-2 max-w-full ">
         {data.map(({ id, title, text, imageUrl }: IProps) => {
           return (
-            <div className="flex ">
+            <div className="flex">
               <div className="">
                 <TitleH3Dark title={title} />
                 <Description text={text} />

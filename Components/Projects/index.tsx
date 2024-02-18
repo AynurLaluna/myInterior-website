@@ -1,9 +1,9 @@
 import React from "react";
-import { FaAngleRight } from "react-icons/fa6";
 import axios from "axios";
+import Link from "next/link";
 import { IProjects } from "@/Interface";
 import TitleH3Dark from "../TitleH3Dark";
-import Link from "next/link";
+import { FaAngleRight } from "react-icons/fa6";
 
 const url = "http://localhost:3001/projects_homepage";
 const Projects = async () => {

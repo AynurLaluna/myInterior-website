@@ -61,7 +61,7 @@ const Footer = () => {
               <Link href="/projects">Our Projects</Link>
             </p>
             <p className="mt-4">
-              <Link href="/teams">Our Team</Link>
+              <Link href="/team">Our Team</Link>
             </p>
             <p className="mt-4">
               <Link href="/contact">Contact Us</Link>

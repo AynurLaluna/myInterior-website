@@ -5,7 +5,7 @@ const Join = () => {
   return (
     <div className="container mx-auto my-20">
       <div className="w-full h-[200px] flex flex-col justify-center items-center bg-primary2 rounded-2xl">
-        <h3 className="text-[#fff] font-bold font-[display] text-3xl leading-[60px]">
+        <h3 className="text-[#fff] font-bold font-[display] text-3xl leading-[60px] tracking-wider">
           Wanna join the Interno?
         </h3>
         <p className="text-[#fff] font-[display] font-light leading-[30px] ">
