@@ -5,6 +5,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { LiaCopyright } from "react-icons/lia";
+import Logo from "../Logo";
 
 const pages = [
   { id: 1, to: "/about", title: "About Us" },
@@ -25,16 +26,16 @@ const Footer = () => {
       <div className=" max-container w-full h-[350px] flex justify-between items-center gap-x-20">
         <div className="ms-10 flex flex-col gap-y-6">
           <div>
-            <Link href="/">
-              <img src="./icons/Logo.png" alt="logo" />
-            </Link>
+            <Logo />
           </div>
           <p className="pr-6 my-6">
             It is a long established fact that a reader will be distracted
             looking.
           </p>
-          <div className="flex gap-x-6 ">
-            <Link href="https://www.facebook.com/">
+          <div className="flex gap-x-6">
+            <Link
+              className=" text-primary2 hover:text-primary1 ease-in-out duration-300  "
+              href="https://www.facebook.com/">
               <FaFacebookF />
             </Link>
             <Link href="https://twitter.com/">

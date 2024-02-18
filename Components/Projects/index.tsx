@@ -3,13 +3,13 @@ import { FaAngleRight } from "react-icons/fa6";
 import axios from "axios";
 import { IProjects } from "@/Interface";
 import TitleH3Dark from "../TitleH3Dark";
-import Description from "../Description";
+import Link from "next/link";
 
 const url = "http://localhost:3001/projects_homepage";
 const Projects = async () => {
   const { data } = await axios.get(url);
   return (
-    <div className="container mx-auto ">
+    <div className="container mx-auto my-20">
       <div className=" flex flex-col items-center">
         <TitleH3Dark title="Follow Our Projects" />
         <p className="mb-5 text-md text-center px-20 font-[other] ">
@@ -22,11 +22,7 @@ const Projects = async () => {
           return (
             <div className="max-w-md">
               <div>
-                <img
-                  className="w-full rounded-tr-2xl"
-                  src={imageUrl}
-                  alt="decor"
-                />
+                <img className=" rounded-tr-2xl" src={imageUrl} alt="decor" />
               </div>
               <div className="flex justify-between items-center">
                 <div className="my-2 ">
@@ -37,8 +33,10 @@ const Projects = async () => {
                     {description}
                   </p>
                 </div>
-                <div>
-                  <FaAngleRight />
+                <div className="flex justify-center items-center w-10 h-10 bg-primary3 rounded-full">
+                  <Link href="/projects">
+                    <FaAngleRight />
+                  </Link>
                 </div>
               </div>
             </div>

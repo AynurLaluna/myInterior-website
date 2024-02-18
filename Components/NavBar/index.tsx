@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { IoSearchOutline } from "react-icons/io5";
+import Logo from "../Logo";
 
 const links = [
   { id: 1, to: "/", title: "Home" },
@@ -18,9 +19,7 @@ function NavBar() {
   return (
     <div className="container m-auto ">
       <div className=" h-[150px] flex items-center justify-between">
-        <div className="w-40 h-fit ">
-          <img src="./icons/Logo.png" alt="logo" />
-        </div>
+        <Logo />
 
         <nav className="cursor-pointer ">
           <div>

@@ -7,6 +7,7 @@ import Brands from "@/Components/Brands";
 import NumberSection from "@/Components/NumberSection";
 import Join from "@/Components/Join";
 import Projects from "@/Components/Projects";
+import ArticleSection from "@/Components/ArticleSection";
 
 
 function page() {
@@ -19,6 +20,7 @@ function page() {
       <Brands />
       <Projects />
       <NumberSection />
+      <ArticleSection />
       <Join />
     
     </div>
