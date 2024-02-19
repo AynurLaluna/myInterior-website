@@ -1,14 +1,13 @@
 import React from "react";
-import BannerLg from "@/Components/BannerLg";
-import OurWork from "@/Components/OurWork";
-import WhoWeAre from "@/Components/WhoWeAre";
-import Reviews from "@/Components/Reviews";
+import BannerLg from "@/Components/HomePage/BannerLg";
+import OurWork from "@/Components/HomePage/OurWork";
+import WhoWeAre from "@/Components/HomePage/WhoWeAre";
+import Reviews from "@/Components/HomePage/Reviews";
 import Brands from "@/Components/Brands";
 import NumberSection from "@/Components/NumberSection";
 import Join from "@/Components/Join";
-import Projects from "@/Components/Projects";
+import Projects from "@/Components/HomePage/Projects";
 import ArticleSection from "@/Components/ArticleSection";
-
 
 function page() {
   return (
@@ -22,7 +21,6 @@ function page() {
       <NumberSection />
       <ArticleSection />
       <Join />
-    
     </div>
   );
 }
