@@ -9,16 +9,16 @@ const TeamOf = () => {
         </h2>
         <div className="grid grid-cols-4 gap-2 flex-wrap py-10">
           <div className="py-5">
-            <img src="./images/lucas.svg" alt="team member/woman" />
+            <img src="./images/lucas.svg" alt="team member/male" />
           </div>
           <div className="py-5">
-            <img src="./images/natasha.svg" alt="team member/woman" />
+            <img src="./images/natasha.svg" alt="team member/female" />
           </div>
           <div className="py-5">
-            <img src="./images/nora.svg" alt="" />
+            <img src="./images/nora.svg" alt="team member/female" />
           </div>
           <div className="py-5">
-            <img src="./images/john.svg" alt="" />
+            <img src="./images/john.svg" alt="team member/male" />
           </div>
         </div>
       </div>

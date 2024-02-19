@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../Button";
+import Button from "../../Button";
 
 function BannerLg() {
   return (
@@ -12,9 +12,8 @@ function BannerLg() {
           There are many variations of the passages of lorem Ipsum from
           available,variations of the passages.
         </p>
-        <div >
+        <div>
           <Button title="Get Started" to="/" />
-          
         </div>
       </div>
     </div>

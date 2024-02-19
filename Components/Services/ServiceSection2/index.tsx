@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { IService } from "@/Interface";
-import TitleH3Dark from "../TitleH3Dark";
+import TitleH3Dark from "../../TitleH3Dark";
 
 const url = "http://localhost:3001/our_work";
 const ServiceSection2 = async () => {

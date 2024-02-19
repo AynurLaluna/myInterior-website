@@ -1,8 +1,8 @@
 import React from "react";
 import axios from "axios";
 import { IReview } from "@/Interface";
-import TitleH3Dark from "../TitleH3Dark";
-import Description from "../Description";
+import TitleH3Dark from "../../TitleH3Dark";
+import Description from "../../Description";
 
 const url = "http://localhost:3001/reviews";
 const Reviews = async () => {

@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import Link from "next/link";
 import { IProjects } from "@/Interface";
-import TitleH3Dark from "../TitleH3Dark";
+import TitleH3Dark from "../../TitleH3Dark";
 import { FaAngleRight } from "react-icons/fa6";
 
 const url = "http://localhost:3001/projects_homepage";

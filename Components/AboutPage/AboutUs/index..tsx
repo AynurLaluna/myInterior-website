@@ -1,10 +1,10 @@
 import React from "react";
 import axios from "axios";
-import Button from "../Button";
+import Button from "../../Button";
 import { IProps } from "@/Interface";
 import Image from "next/image";
-import TitleH3Dark from "../TitleH3Dark";
-import Description from "../Description";
+import TitleH3Dark from "../../TitleH3Dark";
+import Description from "../../Description";
 
 const url = "http://localhost:3001/about_work";
 const AboutUs = async () => {

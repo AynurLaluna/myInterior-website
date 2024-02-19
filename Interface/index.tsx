@@ -31,8 +31,7 @@ export interface IProjects {
 
 export interface IBanner {
   header: string;
-  title1: string;
-  title2: string;
+  title: string;
 }
 
 export interface INumber {
@@ -55,6 +54,13 @@ export interface IService {
   description: string;
   imageUrl: string;
 }
+
+export interface IServiceList {
+  id: number;
+  title: string;
+  listItem: string[];
+}
+
 export interface ITitleH3 {
   title: string;
 }

@@ -1,8 +1,8 @@
 import React from "react";
 import axios from "axios";
 import { IProps } from "@/Interface";
-import TitleH3Dark from "../TitleH3Dark";
-import ArticleBox from "../ArticleBox";
+import TitleH3Dark from "../../TitleH3Dark";
+import ArticleBox from "../../ArticleBox";
 
 const url = "http://localhost:3001/article_section";
 const ArticleNews = async () => {

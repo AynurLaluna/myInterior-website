@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../Button";
+import Button from "../../Button";
 import Link from "next/link";
 import { IoCallOutline } from "react-icons/io5";
 import { CgArrowRight } from "react-icons/cg";

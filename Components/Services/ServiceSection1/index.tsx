@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { IOurWork } from "@/Interface";
-import IconButton from "../IconButton";
+import IconButton from "../../IconButton";
 
 const url = "http://localhost:3001/services";
 const ServiceSection1 = async () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import { IOurWork } from "@/Interface";
-import IconButton from "../IconButton";
+import IconButton from "../../IconButton";
 function OurWork() {
   const review: IOurWork[] = [
     {
