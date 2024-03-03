@@ -56,14 +56,14 @@ const ContactUs = () => {
           <input
             type="text"
             name="name"
-            className="w-full md:w-[45%] py-2  pl-1 md:mr-4 border-b border-main-4  text-sm md:text-base font-[other] text-main-2 placeholder:text-main-4 "
+            className="w-full md:w-[45%] py-2  pl-1 md:mr-4 border-b-[0.05rem] border-main-4  text-sm md:text-base font-[other] text-main-2 placeholder:text-main-4 "
             placeholder="Name"
             required
           />
           <input
             type="email"
             name="email"
-            className="w-full md:w-[45%] py-2 pl-1 md:mr-4 border-b border-main-4  text-sm md:text-base font-[other] text-main-2 placeholder:text-main-4 "
+            className="w-full md:w-[45%] py-2 pl-1 md:mr-4 border-b-[0.05rem] border-main-4  text-sm md:text-base font-[other] text-main-2 placeholder:text-main-4 "
             placeholder="Email"
             required
           />
@@ -73,7 +73,7 @@ const ContactUs = () => {
             name="subject"
             placeholder="Subject"
             required
-            className="w-full md:w-[45%] py-2 pl-1 md:mr-4 border-b border-main-4  text-sm md:text-base font-[other] text-main-2 placeholder:text-main-4 "
+            className="w-full md:w-[45%] py-2 pl-1 md:mr-4 border-b-[0.05rem] border-main-4  text-sm md:text-base font-[other] text-main-2 placeholder:text-main-4 "
           />
 
           <input
@@ -81,7 +81,7 @@ const ContactUs = () => {
             name="phone"
             placeholder="Phone"
             required
-            className="w-full md:w-[45%] py-2 pl-1 md:mr-4 border-b border-main-4  text-sm md:text-base font-[other] text-main-2 placeholder:text-main-4 "
+            className="w-full md:w-[45%] py-2 pl-1 md:mr-4 border-b-[0.05rem] border-main-4  text-sm md:text-base font-[other] text-main-2 placeholder:text-main-4 "
           />
 
           <input
@@ -92,7 +92,7 @@ const ContactUs = () => {
           />
 
           <div className="md:pt-3 flex lg:justify-end md:justify-end justify-center">
-            <Button title="Send Now" to="https://getform.io/f/qalpmqra" />
+            <Button title="Send Now" to="" />
           </div>
         </form>
       </div>

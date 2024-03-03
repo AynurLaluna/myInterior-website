@@ -24,7 +24,7 @@ const Portfolio = () => {
             the of readable content. Lalala blalala black and white. Wipe your
             mouth for god sake.
           </p>
-          <div>
+          <div className="w-full">
             <Button2 to="/project" title="Our Portfolio" />
           </div>
         </div>
