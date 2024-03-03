@@ -10,7 +10,9 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      <Banner2 header="Service Single" title="Home / Services Single" />
+      <div className="singleSBanner">
+        <Banner2 header="Service Single" title="Home / Services Single" />
+      </div>
       <SingleServicesSec1 />
       <Brands />
       <VideoSec />

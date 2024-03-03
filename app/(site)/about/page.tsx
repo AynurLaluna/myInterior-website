@@ -8,7 +8,9 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      <Banner2 header="About Us" title="Home / Aboout Us" />
+      <div className="aboutBanner">
+        <Banner2 header="About Us" title="Home / About Us" />
+      </div>
       <Quote />
       <AboutUs />
       <TeamOf3 />

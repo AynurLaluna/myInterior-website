@@ -8,14 +8,14 @@ const info = [
 ];
 const NumberSection = () => {
   return (
-    <div className="w-full h-[300px] bg-primary3 grid grid-cols-4">
+    <div className="my-32 w-full lg:h-[260px] md:h-[200px] h-[140px] bg-main-3 grid grid-cols-4 divide-x divide-main-1 ">
       {info.map(({ id, title, text }) => {
         return (
           <div className="flex flex-col justify-center items-center">
-            <h4 className=" text-5xl text-primary1 font-semibold font-[display]">
+            <h4 className=" lg:text-5xl text-main-1 font-semibold font-[display]">
               {title}
             </h4>
-            <p className=" mt-4 text-center text-md font-[font] text-primary4 ">
+            <p className="lg:mt-4  text-center lg:text-md md:text-md sm:text-sm max-sm:text-xs font-[font] text-main-4 ">
               {text}
             </p>
           </div>

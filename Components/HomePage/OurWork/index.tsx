@@ -21,17 +21,17 @@ function OurWork() {
   ];
 
   return (
-    <div className="container m-auto">
-      <div className="py-20 flex flex-column justify-center ">
+    <div className="container mx-auto py-20 md:py-32 w-[88vw]">
+      <div className="flex flex-col md:flex-row md:justify-between items-center space-y-5 ">
         {review.map(({ id, header, text }) => {
           return (
             <div
-              className="w-3/12 px-12 items-center text-center text-primary2 "
+              className="w-[320px] p-4 sm:border shadow-md md:border-0 rounded-xl text-center hover:bg-main-3 hover:shadow-xl hover:translate-y-2 ease-in-out duration-300 "
               key={id}>
-              <h4 className="py-4 font-semibold text-[1.5rem] text-center">
+              <h4 className="py-1 md:py-2 font-semibold lg:text-2xl md:text-xl leading-5 text-center text-main-2 font-[display]">
                 {header}
               </h4>
-              <p className="text-center font-normal text-base text-primary">
+              <p className="text-center text-sm md:text-base text-main-4 font-[other]">
                 {text}
               </p>
               <IconButton to="/" title="Read More" />

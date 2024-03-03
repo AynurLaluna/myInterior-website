@@ -45,6 +45,14 @@ export interface IProps {
   text: string;
   imageUrl: string;
 }
+export interface ITeamOf {
+  id: number;
+  image: string;
+  fullName: string;
+  from: string;
+  contact: string;
+  email: string;
+}
 
 export interface IService {
   id: number;
@@ -55,17 +63,42 @@ export interface IService {
   imageUrl: string;
 }
 
-export interface IServiceList {
+export interface IList {
   id: number;
   title: string;
   listItem: string[];
 }
 
+export interface IPricing {
+  id: number;
+  title: string;
+  price: number;
+  pricing_plan: string;
+  list: string[];
+}
+
+export interface ITabs {
+  id: number;
+  title: string;
+}
+
 export interface ITitleH3 {
   title: string;
 }
+
 export interface IDescription {
   text: string;
+}
+
+export interface IRoomNav {
+  id: number;
+  to: string;
+  link: string;
+}
+
+export interface IGrid {
+  id: number;
+  imageUrl: string;
 }
 
 export interface ITeam {
@@ -73,4 +106,14 @@ export interface ITeam {
   imageUrl: string;
   fullName: string;
   info: string;
+}
+
+export interface ITag {
+  title: string;
+}
+
+export interface IMedia {
+  id: number;
+  link: string;
+  to: string;
 }

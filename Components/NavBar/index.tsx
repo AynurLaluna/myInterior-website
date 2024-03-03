@@ -1,10 +1,10 @@
 "use client";
 
-import React from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { IoSearchOutline } from "react-icons/io5";
 import Logo from "../Logo";
+import classNames from "classnames";
 
 const links = [
   { id: 1, to: "/", title: "Home" },
@@ -16,26 +16,39 @@ const links = [
 ];
 
 function NavBar() {
-  return (
-    <div className="container m-auto ">
-      <div className=" h-[150px] flex items-center justify-between">
-        <Logo />
+  const [showMenu, setShowMenu] = useState(false);
 
-        <nav className="cursor-pointer ">
-          <div>
-            {links.map(({ id, to, title }) => {
-              return (
-                <Link
-                  className=" ms-14 inline-block text-lg leading-5 text-primary2"
-                  href={to}
-                  key={id}>
-                  {title}
-                </Link>
-              );
-            })}
-            <IoSearchOutline className="inline-block ms-14 w-5 h-5 text-[#141414]" />
-          </div>
+  return (
+    <div className="container mx-auto w-[88vw]">
+      <div className="max-w-7xl px-2 md:px-4 lg:px-6 md:h-[140px] flex md:items-center md:justify-between">
+        <div className="hidden md:block">
+          <Logo />
+        </div>
+        <nav
+          className={`w-72 md:w-fit h-full md:h-fit md:block pt-20 md:pt-0 absolute md:static left-0 bg-main-3 md:bg-white flex flex-col items-center space-y-10 duration-300 ${showMenu ? "translate-x-0" : "-translate-x-full"} md:translate-x-0`}>
+          {links.map(({ id, to, title }) => {
+            return (
+              <Link
+                className=" md:ms-14 inline-block font-[other] text-xl md:text-lg text-main-1 hover:text-main-2 md:text-main-2 md:hover:text-main-1 ease-in-out duration-300 cursor-pointer "
+                href={to}
+                key={id}>
+                {title}
+              </Link>
+            );
+          })}
         </nav>
+        <div className="block  md:hidden lg:hidden">
+          <div
+            className={classNames({
+              "hamburger-lines": true,
+              "active-hamburger": showMenu,
+            })}
+            onClick={() => setShowMenu((prevState) => !prevState)}>
+            <span className="line line1"></span>
+            <span className="line line2"></span>
+            <span className="line line3"></span>
+          </div>
+        </div>
       </div>
     </div>
   );

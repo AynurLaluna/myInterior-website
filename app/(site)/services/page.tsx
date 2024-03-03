@@ -7,7 +7,9 @@ import React from "react";
 const page = () => {
   return (
     <div>
-      <Banner2 header="Services" title="Home / Services" />
+      <div className="servicesBanner bg-auto bg-center bg-no-repeat">
+        <Banner2 header="Services" title="Home / Services" />
+      </div>
       <ServiceSection1 />
       <ServiceSection2 />
       <Join />

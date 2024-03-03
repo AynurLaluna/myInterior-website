@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
 
 * {
   margin: 0;
@@ -11,11 +13,16 @@
   outline: none;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 .banner {
   height: 100vh;
   background-image: url(../public/images/Banner.png);
-  background-size: cover;
   background-position: center;
+  background-size: cover;
   border-radius: 0 0 0 290px;
   display: flex;
   flex-direction: column;
@@ -23,8 +30,147 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-.banner2 {
-  background-image: url("../public/images/AboutBanner.png");
-  background-size: cover;
+.aboutBanner {
+  background-image: url(../public/banners/banner1.svg);
+}
+
+.servicesBanner {
+  background-image: url(../public/banners/banner2.svg);
+}
+
+.singleSBanner {
+  background-image: url(../public/banners/banner3.svg);
+}
+.pricingBanner {
+  background-image: url(../public/banners/banner4.svg);
+}
+
+.ourPBanner {
+  background-image: url(../public/banners/banner5.svg);
+}
+
+.bedBanner {
+  background-image: url(../public/banners/banner6.svg);
+}
+
+.bedroomBanner {
+  background-image: url(../public/banners/banner7.svg);
+}
+
+.blogBanner {
+  background-image: url(../public/banners/banner7.svg);
+}
+
+.postBanner {
+  background-image: url(../public/banners/banner8.svg);
+}
+
+.teamBanner {
+  background-image: url(../public/banners/banner9.svg);
+}
+
+.bannerTeamSingle {
+  background-image: url(../public/banners/banner10.svg);
+}
+
+.contactBanner {
+  background-image: url(../public/banners/banner11.svg);
+}
+
+.notFound {
+  background-image: url("../public/images/notfound.svg");
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 26px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #cda274;
+}
+
+.hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.active-hamburger .line1 {
+  transform: rotate(45deg);
+}
+
+.active-hamburger .line2 {
+  transform: scaleY(0);
+}
+
+.active-hamburger .line3 {
+  transform: rotate(-45deg);
+}
+
+.logo {
+  display: none;
+}
+
+/*About Us page's style*/
+
+/*didnt work. ask about this
+/* @media (min-width: 768px) {
+  .aboutWrapper :first-child {
+    flex-direction: row-reverse;
+  }
+} */
+
+/* Services Page/ Section-2 style */
+
+.single-card {
+  position: relative;
+}
+.wrapper {
+  perspective: 1000px;
+}
+.single-card {
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+.single-card:hover {
+  transform: rotateY(-180deg);
+}
+.front,
+.back {
+  position: relative;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.front {
+  cursor: pointer;
+  height: 100%;
+}
+.back {
+  transform: rotateY(-180deg);
+  position: absolute;
 }

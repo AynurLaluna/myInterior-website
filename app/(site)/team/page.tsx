@@ -5,10 +5,12 @@ import React from 'react'
 const page = () => {
   return (
     <div>
-      <Banner2 header="Our Professional" title1="Home /" title2=" Team" />
+      <div className='teamBanner'>
+        <Banner2 header="Our Professional" title="Home / Team" />
+      </div>
       <Team />
     </div>
-  )
+  );
 }
 
 export default page
