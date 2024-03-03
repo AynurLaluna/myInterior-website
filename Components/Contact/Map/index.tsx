@@ -2,10 +2,13 @@ import React from "react";
 
 const Map = () => {
   return (
-    <div className="">
+    <div className="container mx-auto w-[80vw] h-fit">
       <iframe
-        className="my-20 w-full lg:h-[34rem] md:h-[30rem] sm:h-[28rem] h-[26rem] rounded-[60px] "
-        src="https://www.google.com/maps/place/Bayside+High+School/@40.7714825,-73.7896729,15z/data=!4m6!3m5!1s0x89c28a70db3f3b47:0x4f279988777174d8!8m2!3d40.771482!4d-73.7808071!16zL20vMGR5M3Y2?entry=ttu"></iframe>
+        className="w-full"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6626.344602271597!2d151.19910114177034!3d-33.859450142920416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae5c33fe767b%3A0x5017d681632c120!2sMillers%20Point%20NSW%202000%2C%20Australia!5e0!3m2!1sen!2saz!4v1709473569205!5m2!1sen!2saz"
+        width="600"
+        height="450"
+        loading="lazy"></iframe>
     </div>
   );
 };

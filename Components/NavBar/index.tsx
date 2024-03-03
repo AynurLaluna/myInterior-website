@@ -17,6 +17,7 @@ const links = [
 
 function NavBar() {
   const [showMenu, setShowMenu] = useState(false);
+  const [isHidden, setIsHidden] = useState(true);
 
   return (
     <div className="container mx-auto w-[88vw]">
@@ -25,11 +26,11 @@ function NavBar() {
           <Logo />
         </div>
         <nav
-          className={`w-72 md:w-fit h-full md:h-fit md:block pt-20 md:pt-0 absolute md:static left-0 bg-main-3 md:bg-white flex flex-col items-center space-y-10 duration-300 ${showMenu ? "translate-x-0" : "-translate-x-full"} md:translate-x-0`}>
+          className={`w-full md:w-fit  h-full md:h-fit md:block pt-20 md:pt-0 absolute md:static left-0 bg-main-3 md:bg-white flex flex-col items-center space-y-10 duration-300 ${showMenu ? "translate-x-0" : "-translate-x-full"} md:translate-x-0`}>
           {links.map(({ id, to, title }) => {
             return (
               <Link
-                className=" md:ms-14 inline-block font-[other] text-xl md:text-lg text-main-1 hover:text-main-2 md:text-main-2 md:hover:text-main-1 ease-in-out duration-300 cursor-pointer "
+                className=" md:ms-5 lg:ms-12 inline-block font-[other] text-xl md:text-lg text-main-1 hover:text-main-2 md:text-main-2 md:hover:text-main-1 ease-in-out duration-300 cursor-pointer "
                 href={to}
                 key={id}>
                 {title}

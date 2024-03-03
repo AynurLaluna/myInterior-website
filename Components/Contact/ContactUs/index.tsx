@@ -52,42 +52,45 @@ const ContactUs = () => {
         <form
           action="https://getform.io/f/qalpmqra"
           method="POST"
-          className="space-y-4 md:px-10">
+          className="space-y-2 md:space-y-4 md:px-10">
           <input
-            className="w-[45%] mr-4 border-b border-main-2  py-2 text-sm md:text-base font-[other] text-main-2 placeholder:text-main-4 "
             type="text"
-            value="name"
+            name="name"
+            className="w-full md:w-[45%] py-2  pl-1 md:mr-4 border-b border-main-4  text-sm md:text-base font-[other] text-main-2 placeholder:text-main-4 "
             placeholder="Name"
             required
           />
           <input
-            className="w-[45%] border-b border-main-2 py-2 text-sm md:text-base font-[other] text-main-2 placeholder:text-main-4 "
             type="email"
-            value="email"
+            name="email"
+            className="w-full md:w-[45%] py-2 pl-1 md:mr-4 border-b border-main-4  text-sm md:text-base font-[other] text-main-2 placeholder:text-main-4 "
             placeholder="Email"
             required
           />
+
           <input
-            className="w-[45%] mr-4 border-b border-main-2 py-2 text-sm md:text-base font-[other] text-main-2 placeholder:text-main-4 "
-            type="subject"
-            value="subject"
+            type="text"
+            name="subject"
             placeholder="Subject"
             required
+            className="w-full md:w-[45%] py-2 pl-1 md:mr-4 border-b border-main-4  text-sm md:text-base font-[other] text-main-2 placeholder:text-main-4 "
           />
+
           <input
-            className="w-[45%] border-b border-main-2 py-2 text-sm md:text-base font-[other] text-main-2 placeholder:text-main-4 "
             type="tel"
+            name="phone"
             placeholder="Phone"
-            value="phone"
             required
+            className="w-full md:w-[45%] py-2 pl-1 md:mr-4 border-b border-main-4  text-sm md:text-base font-[other] text-main-2 placeholder:text-main-4 "
           />
+
           <input
-            className="w-full border-b border-main-2 py-10 text-sm md:text-base font-[other] text-main-2 placeholder:text-main-4 "
             type="textarea"
-            value="message"
-            placeholder="Hello I am interested in.."
-            required
+            name="message"
+            className="border-b border-main-4 pl-1 md:border-main-2 w-full h-24 md:h-32  text-sm md:text-base placeholder-main-4 font-[other]"
+            placeholder="Hello, I am interested in.."
           />
+
           <div className="md:pt-3 flex lg:justify-end md:justify-end justify-center">
             <Button title="Send Now" to="https://getform.io/f/qalpmqra" />
           </div>
