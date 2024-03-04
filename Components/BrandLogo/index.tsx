@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
-import { IBrands } from "@/Interface";
 import Image from "next/image";
+import { IBrands } from "@/Interface";
 
 const url = "https://interno-db.vercel.app/brands";
 const BrandLogo = async () => {
