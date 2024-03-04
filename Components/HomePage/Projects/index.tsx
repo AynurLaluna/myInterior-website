@@ -6,7 +6,7 @@ import { IProjects } from "@/Interface";
 import TitleH3Dark from "../../TitleH3Dark";
 import { FaAngleRight } from "react-icons/fa6";
 
-const url = "http://localhost:3001/projects_homepage";
+const url = "https://interno-db.vercel.app/projects_homepage";
 const Projects = async () => {
   const { data } = await axios.get(url);
   return (

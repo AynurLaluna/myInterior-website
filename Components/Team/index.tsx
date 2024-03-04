@@ -6,7 +6,7 @@ import { ITeam } from "@/Interface";
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-const url = "http://localhost:3001/our_team";
+const url = "https://interno-db.vercel.app/our_team";
 const Team = async () => {
   const { data } = await axios.get(url);
   return (

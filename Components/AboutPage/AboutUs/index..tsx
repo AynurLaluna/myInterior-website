@@ -5,7 +5,7 @@ import Button from "../../Button";
 import { IProps } from "@/Interface";
 import TitleH3Dark from "../../TitleH3Dark";
 
-const url = "http://localhost:3001/about_work";
+const url = "https://interno-db.vercel.app/about_work";
 
 const AboutUs = async () => {
   const { data } = await axios.get(url);

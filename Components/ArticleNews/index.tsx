@@ -6,7 +6,7 @@ import { IProps } from "@/Interface";
 import { FaAngleRight } from "react-icons/fa6";
 import { CgArrowRight } from "react-icons/cg";
 
-const url = "http://localhost:3001/article_section";
+const url = "https://interno-db.vercel.app/article_section";
 const ArticleNews = async () => {
   const { data } = await axios.get(url);
   return (

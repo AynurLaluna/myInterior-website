@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import { IList } from "@/Interface";
 
-const url = "http://localhost:3001/bedrooms_info_card";
+const url = "https://interno-db.vercel.app/bedrooms_info_card";
 const InfoSec = async () => {
   const { data } = await axios.get(url);
   return (

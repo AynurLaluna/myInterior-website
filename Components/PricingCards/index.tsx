@@ -3,7 +3,7 @@ import axios from "axios";
 import { IPricing } from "@/Interface";
 import Button from "../Button";
 
-const url = "http://localhost:3001/pricing_cards";
+const url = "https://interno-db.vercel.app/pricing_cards";
 const PricingCards = async () => {
   const { data } = await axios.get(url);
   return (

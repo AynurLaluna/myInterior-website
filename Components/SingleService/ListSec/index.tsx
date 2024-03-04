@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import { IList } from "@/Interface";
 
-const url = "http://localhost:3001/single_services";
+const url = "https://interno-db.vercel.app/single_services";
 const ListSec = async () => {
   const { data } = await axios.get(url);
   return (

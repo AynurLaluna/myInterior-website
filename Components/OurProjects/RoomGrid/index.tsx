@@ -5,7 +5,7 @@ import Image from "next/image";
 import { IGrid } from "@/Interface";
 import { FaAngleRight } from "react-icons/fa6";
 
-const url = "http://localhost:3001/bedroom_arch";
+const url = "https://interno-db.vercel.app/bedroom_arch";
 const RoomGrid = async () => {
   const { data } = await axios.get(url);
   return (

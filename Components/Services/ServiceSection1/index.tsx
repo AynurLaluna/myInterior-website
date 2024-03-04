@@ -3,7 +3,7 @@ import axios from "axios";
 import { IOurWork } from "@/Interface";
 import IconButton from "../../IconButton";
 
-const url = "http://localhost:3001/services";
+const url = "https://interno-db.vercel.app/services";
 const ServiceSection1 = async () => {
   const { data } = await axios.get(url);
   return (
