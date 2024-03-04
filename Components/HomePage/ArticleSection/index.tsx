@@ -3,10 +3,9 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { IProps } from "@/Interface";
-import TitleH3Dark from "../../TitleH3Dark";
 import { FaAngleRight } from "react-icons/fa6";
 
-const url = "http://localhost:3001/articles_news";
+const url = "https://interno-db.vercel.app/articles_news";
 const ArticleSection = async () => {
   const { data } = await axios.get(url);
   return (

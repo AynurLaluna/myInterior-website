@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
-import { IPricing } from "@/Interface";
 import Button from "../Button";
+import { IPricing } from "@/Interface";
 
 const url = "https://interno-db.vercel.app/pricing_cards";
 const PricingCards = async () => {

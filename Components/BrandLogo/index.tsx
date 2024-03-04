@@ -3,7 +3,7 @@ import axios from "axios";
 import { IBrands } from "@/Interface";
 import Image from "next/image";
 
-const url = "http://localhost:3001/brands";
+const url = "https://interno-db.vercel.app/brands";
 const BrandLogo = async () => {
   const { data } = await axios.get(url);
   return (

@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { IProps } from "@/Interface";
 import { FaAngleRight } from "react-icons/fa6";
-import { CgArrowRight } from "react-icons/cg";
 
 const url = "https://interno-db.vercel.app/article_section";
 const ArticleNews = async () => {
