@@ -12,11 +12,11 @@ const SingleServicesSec1 = () => {
         </h3>
 
         <div className="w-[500px] space-y-4 ">
-          <p className=" text-md font-[other] text-main-1 leading-7 ">
+          <p className=" text-base font-[other] text-main-1 leading-7 ">
             It is a long established fact that a reader will be distracted by
             the of readable content of a page
           </p>
-          <p className=" text-md font-[other] text-main-4 leading-7 ">
+          <p className=" text-base font-[other] text-main-4 leading-7 ">
             when looking at its layouts the points spring of using that it has a
             more or less normal. A wonderful serenity has taken progression of
             my entire soul, like these sweet mornings of spring which I enjoy
