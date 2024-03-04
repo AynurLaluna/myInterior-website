@@ -60,6 +60,9 @@ const Footer = () => {
           <p className="lg:my-4 md:my-3 my-1.5 md:text-base text-sm text-main-4 hover:text-main-1 duration-300 ease-in-out">
             <Link href="/services">Services</Link>
           </p>
+          <p className="lg:my-4 md:my-3 my-1.5 md:text-base text-sm text-main-4 hover:text-main-1 duration-300 ease-in-out">
+            <Link href="/pricing">Pricing and Plan</Link>
+          </p>
         </div>
         <div>
           <h4 className="text-main-2 md:text-xl sm:text-lg text-lg font-bold font-[display]">
@@ -74,9 +77,7 @@ const Footer = () => {
           <p className="lg:my-4 md:my-3 my-1.5 md:text-base text-sm  text-main-4 hover:text-main-1 duration-300 ease-in-out">
             <Link href="/bathroom">Bathroom</Link>
           </p>
-          <p className="lg:my-4 md:my-3 my-1.5 md:text-base text-sm text-main-4 hover:text-main-1 duration-300 ease-in-out">
-            <Link href="/dinning">Dinning Hall</Link>
-          </p>
+
           <p className="lg:my-4 md:my-3 my-1.5 md:text-base text-sm  text-main-4 hover:text-main-1 duration-300 ease-in-out">
             <Link href="/bedroom">Bedroom</Link>
           </p>
