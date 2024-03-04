@@ -11,7 +11,9 @@ const Join = () => {
         <p className="text-sm md:text-base text-[#fff] font-[display] font-light md:leading-[30px] ">
           It is a long established factory.
         </p>
-        <Button2 title="Contact With Us" to="/contact" />
+        <div>
+          <Button2 title="Contact With Us" to="/contact" />
+        </div>
       </div>
     </div>
   );
