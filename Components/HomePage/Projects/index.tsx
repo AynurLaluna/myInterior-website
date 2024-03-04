@@ -40,7 +40,7 @@ const Projects = async () => {
                     {description}
                   </p>
                 </div>
-                <div className="flex justify-center items-center size-7 md:size-8 lg:size-10 bg-main-3 hover:bg-main-1 ease-in-out duration-300 rounded-full">
+                <div className="flex justify-center items-center size-7 md:size-8 lg:size-10 bg-main-3 hover:bg-main-1 hover:text-white ease-in-out duration-300 rounded-full">
                   <Link href="/projects">
                     <FaAngleRight />
                   </Link>
