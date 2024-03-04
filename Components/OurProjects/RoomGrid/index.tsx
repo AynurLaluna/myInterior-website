@@ -1,40 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import Link from "next/link";
 import Image from "next/image";
-import { IGrid, ITabs } from "@/Interface";
+import { IGrid } from "@/Interface";
 import { FaAngleRight } from "react-icons/fa6";
-
-const tabs = [
-  { id: 1, title: "Bathroom" },
-  { id: 2, title: "Bedroom" },
-  { id: 3, title: "Kitchen" },
-  { id: 4, title: "LivingRoom" },
-];
 
 const url = "http://localhost:3001/bedroom_arch";
 const RoomGrid = async () => {
   const { data } = await axios.get(url);
   return (
-    <section className="container mx-auto w-[88vw] my-20 space-y-5">
+    <section className="container mx-auto w-[80vw] my-20 md:my-32 space-y-5">
       <div className="tabs flex justify-center items-center ">
         <div className="w-fit space-x-1 border rounded-2xl ">
-          {tabs.map(({ id, title }: ITabs) => {
-            return (
-              <button
-                className="tabs hover:bg-main-1 py-2 px-4 md:px-6 lg:px-8 rounded-xl text-sm md:text-base "
-                key={id}>
-                {title}
-              </button>
-            );
-          })}
+          <button className="tabs active-tabs hover:bg-main-1 hover:text-white py-2 px-4 md:px-6 lg:px-8 rounded-xl text-sm md:text-base">
+            Bathroom
+          </button>
+          <button className="tabs bg-main-1 text-white py-2 px-4 md:px-6 lg:px-8 rounded-xl text-sm md:text-base ">
+            Bedroom
+          </button>
+          <button className="tabs hover:bg-main-1 hover:text-white py-2 px-4 md:px-6 lg:px-8 rounded-xl text-sm md:text-base ">
+            Kitchen
+          </button>
+          <button className="tabs hover:bg-main-1 hover:text-white py-2 px-4 md:px-6 lg:px-8 rounded-xl text-sm md:text-base ">
+            Living Room
+          </button>
         </div>
       </div>
 
       <div className="content-tabs grid grid-cols-2 gap-10">
         {data.map(({ id, imageUrl }: IGrid) => {
           return (
-            <div className="content ">
+            <div className="content active-content">
               <div key={id}>
                 <Image
                   className="w-full"
@@ -62,9 +58,6 @@ const RoomGrid = async () => {
             </div>
           );
         })}
-        <div className="content">Bathroom</div>
-        <div className="content">Kitchen</div>
-        <div className="content">LivingRoom</div>
       </div>
     </section>
   );
