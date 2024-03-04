@@ -3,7 +3,6 @@ import Image from "next/image";
 import React, { useEffect } from "react";
 import Button from "../../Button";
 import { IProps } from "@/Interface";
-import TitleH3Dark from "../../TitleH3Dark";
 
 const url = "https://interno-db.vercel.app/about_work";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
-import { IProps } from "@/Interface";
 import Image from "next/image";
+import { IProps } from "@/Interface";
 import { FaAngleRight } from "react-icons/fa6";
 
 const ArticleBox = ({ id, imageUrl, title, text }: IProps) => {
