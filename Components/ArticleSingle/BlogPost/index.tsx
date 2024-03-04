@@ -1,6 +1,6 @@
 import React from "react";
-import SideBar from "../SideBar";
 import Image from "next/image";
+import SideBar from "../SideBar";
 import MediaIcons from "@/Components/MediaIcons";
 import TagButton from "@/Components/ArticleSingle/TagButton";
 
