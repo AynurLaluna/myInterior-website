@@ -4,7 +4,7 @@ import Image from "next/image";
 import { IReview } from "@/Interface";
 import TitleH3Dark from "../../TitleH3Dark";
 
-const url = "http://localhost:3001/reviews";
+const url = "https://interno-db.vercel.app/reviews";
 const Reviews = async () => {
   const { data } = await axios.get(url);
   return (
