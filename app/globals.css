@@ -155,7 +155,7 @@ body {
   transform-style: preserve-3d;
 }
 .single-card:hover {
-  transform: rotateY(-180deg);
+  transform: rotateY(180deg);
 }
 .front,
 .back {
