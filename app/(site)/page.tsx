@@ -8,7 +8,7 @@ import NumberSection from "@/Components/NumberSection";
 import Join from "@/Components/Join";
 import Projects from "@/Components/HomePage/Projects";
 import ArticleSection from "@/Components/HomePage/ArticleSection";
-import store from "../../redux/store";
+
 import BrandLogo from "@/Components/BrandLogo";
 
 function page() {
